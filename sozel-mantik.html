@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözel Mantık İstasyonu | Türkçe İstasyonu</title>
+    <style>
+        /* Genel Tasarım Ayarları */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* Navigasyon Barı */
+        header {
+            background-color: #16213e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #e94560;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e94560;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #e94560;
+        }
+
+        /* İçerik Alanı */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #e94560;
+        }
+
+        .station-header {
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 6px solid #e94560;
+            margin-bottom: 2rem;
+        }
+
+        .station-header h1 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .station-header p {
+            color: #94a3b8;
+        }
+
+        /* Taktik Blokları */
+        .tactic-section {
+            background-color: #16213e;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #2e3856;
+        }
+
+        .tactic-title {
+            color: #e94560;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Adım Adım Liste */
+        .steps {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .steps li {
+            background-color: #0f3460;
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+            border-radius: 6px;
+            border-left: 4px solid #e94560;
+        }
+
+        .steps li strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        /* Örnek Tablo Tasarımı */
+        .sample-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background-color: #111424;
+            color: #fff;
+        }
+
+        .sample-table th, .sample-table td {
+            border: 1px solid #2e3856;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        .sample-table th {
+            background-color: #e94560;
+        }
+
+        /* Soru Alanı */
+        .question-box {
+            background-color: #111424;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e94560;
+            margin-top: 2rem;
+        }
+
+        .question-tag {
+            background-color: #e94560;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .question-text {
+            margin: 1rem 0;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .options {
+            list-style: none;
+        }
+
+        .options li {
+            background-color: #16213e;
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border: 1px solid #2e3856;
+        }
+
+        .options li:hover {
+            background-color: #0f3460;
+            border-color: #e94560;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111424;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menü Alanı -->
+    <header>
+        <a href="index.html" class="logo">Türkçe<span>İstasyonu</span></a>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="#">Anlam Atlası</a>
+            <a href="#">Dil Bilgisi</a>
+            <a href="#">LGS Taktikleri</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Ana Sayfaya Dön</a>
+
+        <!-- İstasyon Başlığı -->
+        <div class="station-header">
+            <h1>Sözel Mantık ve Muhakeme İstasyonu</h1>
+            <p>Formül ezberleme, zihnini serbest bırak ve bilgileri doğru kutulara yerleştir!</p>
+        </div>
+
+        <!-- Taktik Bölümü -->
+        <div class="tactic-section">
+            <h2 class="tactic-title">🎯 Sözel Mantık Sorularını Çözen 3 Altın Kural</h2>
+            <p>Bu sorular akıl yürütme becerini ölçer, Türkçe bilginle ilgisi yoktur. Sadece şu adımları takip et:</p>
+            
+            <ul class="steps">
+                <li>
+                    <strong>1. Tablo Çizmek Zorundasın:</strong>
+                    Soruyu aklından çözmeye çalışmak en büyük hatadır. Az olan, sabit olan değişkeni (örneğin günleri veya kat numaralarını) her zaman tablonun üst satırına yaz.
+                </li>
+                <li>
+                    <strong>2. Kesin Bilgileri Yerleştir:</strong>
+                    Öncülleri okurken "Ali pazartesi günü gitmiştir" gibi kesin bilgileri hemen tabloya yaz ve yanına bir tik at.
+                </li>
+                <li>
+                    <strong>3. Olasılıkları Parantez İçinde Yaz:</strong>
+                    "Can ve Elif ardışık günlerde gitmiştir" diyorsa ama hangisi önce bilinmiyorsa, ikisini de parantez içinde yazarak yerlerini değiştirebileceğini kendine hatırlat.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Örnek Tablo Görselleştirmesi -->
+        <div class="tactic-section">
+            <h2 class="tactic-title">📊 Örnek İstasyon Tablosu (Sıralama Soruları İçin)</h2>
+            <p>Az olan değişkeni (Günleri) üste sabitlediğimizde tablo şu netlikte görünmelidir:</p>
+            
+            <table class="sample-table">
+                <thead>
+                    <tr>
+                        <th>Pazartesi</th>
+                        <th>Salı</th>
+                        <th>Çarşamba</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ali (Kesin)</td>
+                        <td>Can / Elif (Olasılık)</td>
+                        <td>Elif / Can (Olasılık)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Yeni Nesil Soru Pratiği -->
+        <div class="question-box">
+            <span class="question-tag">YENİ NESİL KONTROL NOKTASI</span>
+            <p class="question-text">
+                A, B, C, D ve E adlı beş arkadaş bir kütüphaneden kitap ödünç almıştır. Kitap türleri roman ve şiirdir.<br><br>
+                • Toplam 3 roman, 2 şiir kitabı alınmıştır.<br>
+                • A ve C aynı türde kitap almıştır.<br>
+                • B şiir kitabı almıştır.<br><br>
+                <strong>Buna göre aşağıdakilerden hangisi kesinlikle doğrudur?</strong>
+            </p>
+            <ul class="options">
+                <li>A) A kişisi şiir kitabı almıştır.</li>
+                <li>B) C kişisi roman almıştır.</li>
+                <li>C) D ve E farklı türde kitaplar almıştır.</li>
+                <li>D) E kişisi şiir kitabı almıştır.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Türkçe İstasyonu. LGS Hazırlık Dijital Portfolyosu.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraf İstasyonu | Türkçe İstasyonu</title>
+    <style>
+        /* Genel Tasarım Ayarları */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* Navigasyon Barı */
+        header {
+            background-color: #16213e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #e94560;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e94560;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #e94560;
+        }
+
+        /* İçerik Alanı */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #e94560;
+        }
+
+        .station-header {
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 6px solid #e94560;
+            margin-bottom: 2rem;
+        }
+
+        .station-header h1 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .station-header p {
+            color: #94a3b8;
+        }
+
+        /* Taktik Blokları */
+        .tactic-section {
+            background-color: #16213e;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #2e3856;
+        }
+
+        .tactic-title {
+            color: #e94560;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Vurgu Kutuları */
+        .focus-box {
+            background-color: #0f3460;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .focus-box strong {
+            color: #fff;
+        }
+
+        .keyword {
+            background-color: #e94560;
+            color: white;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Soru Alanı */
+        .question-box {
+            background-color: #111424;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e94560;
+            margin-top: 2rem;
+        }
+
+        .question-tag {
+            background-color: #e94560;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .question-text {
+            margin: 1rem 0;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .options {
+            list-style: none;
+        }
+
+        .options li {
+            background-color: #16213e;
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border: 1px solid #2e3856;
+        }
+
+        .options li:hover {
+            background-color: #0f3460;
+            border-color: #e94560;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111424;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menü Alanı -->
+    <header>
+        <a href="index.html" class="logo">Türkçe<span>İstasyonu</span></a>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="#">Anlam Atlası</a>
+            <a href="#">Dil Bilgisi</a>
+            <a href="#">LGS Taktikleri</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Ana Sayfaya Dön</a>
+
+        <!-- İstasyon Başlığı -->
+        <div class="station-header">
+            <h1>Paragrafta Ana Düşünce İstasyonu</h1>
+            <p>Metnin kalbine giden yolu bul: Yazar bu metni bana neden okuttu?</p>
+        </div>
+
+        <!-- Taktik Bölümü -->
+        <div class="tactic-section">
+            <h2 class="tactic-title">💡 Ana Düşünceyi Yakalama Dedektörleri</h2>
+            <p>Ana düşünce, paragrafın yazılış amacıdır. Şıkları elerken şu ipuçlarını ara:</p>
+            
+            <div class="focus-box">
+                <strong>1. Sinyal Kelimeleri Takip Et:</strong><br>
+                Yazarlar ana düşünceyi vermeden önce genellikle vites değiştirirler. Metnin içinde geçen <span class="keyword">kısacası</span>, <span class="keyword">asıl önemli olan</span>, <span class="keyword">oysaki</span>, <span class="keyword">bence</span>, <span class="keyword">çünkü</span> veya <span class="keyword">sonuç olarak</span> gibi ifadelerden sonraki cümlelere pürdikkat odaklan. Ana düşünce genellikle oradadır.
+            </div>
+
+            <div class="focus-box">
+                <strong>2. Son Cümle Akımı:</strong><br>
+                LGS'deki paragraf türlerinin büyük kısmı "tümdengelim" veya "sonuç" odaklıdır. Yazar örnekleri verir, açıklar ve son darbeyi son cümlede vurur. Metnin son bir iki cümlesini altını çizerek oku.
+            </div>
+
+            <div class="focus-box">
+                <strong>3. Parça-Bütün İlişkisi:</strong><br>
+                Şıklardaki yargı metnin sadece bir cümlesini mi kapsıyor, yoksa tamamını mı kucaklıyor? Sadece bir örneğe dayanan şıklar "yardımcı düşünce"dir, seni yanıltmasın!
+            </div>
+        </div>
+
+        <!-- Yeni Nesil Soru Pratiği -->
+        <div class="question-box">
+            <span class="question-tag">YENİ NESİL KONTROL NOKTASI</span>
+            <p class="question-text">
+                Kitaplar, insanlığın ortak hafızasıdır. Yüzyıllar önce yaşamış bir düşünürün zihninden geçenler, bir sayfa üzerinde bize ulaşır. Ancak sadece okumak yetmez; okunanları hayata geçirmek, onlarla düşünce dünyamızı zenginleştirmek gerekir. Kısacası, raflarda tozlanan ya da zihinde sadece bir bilgi olarak kalan kitaplar yerine, insanın davranışlarına yön veren, onu dönüştüren kitaplar gerçek amacına ulaşmış demektir.<br><br>
+                <strong>Bu metnin ana düşüncesi aşağıdakilerden hangisidir?</strong>
+            </p>
+            <ul class="options">
+                <li>A) Kitaplar insanlığın geçmişine ışık tutan en önemli araçlardır.</li>
+                <li>B) Gerçek okuma, kitaptaki bilgilerin hayata aktarılması ve insanı dönüştürmesiyle gerçekleşir.</li>
+                <li>C) Okuma alışkanlığı küçük yaşlarda kazanılması gereken bir beceridir.</li>
+                <li>D) Her kitap, yazarının iç dünyasını okuyucuya yansıtan bir aynadır.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Türkçe İstasyonu. LGS Hazırlık Dijital Portfolyosu.</p>
+    </footer>
+
+</body>
+</html>
